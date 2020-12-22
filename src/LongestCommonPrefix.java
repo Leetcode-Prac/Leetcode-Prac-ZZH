@@ -23,15 +23,15 @@ public class LongestCommonPrefix {
         }
 
 
-    public static void main(String[] args) {
-        LongestCommonPrefix lon = new LongestCommonPrefix();
-        String str =lon.longestCommonPrefix(new String[]{"dog", "racecar", "car"});
-        System.out.println(str);
-        String str1 =lon.longestCommonPrefix(new String[]{"flower","flow","flight"});
-        System.out.println(str1);
-        String str2 =lon.longestCommonPrefix(new String[]{"ab","a"});
-        System.out.println(str2);
-    }
+//    public static void main(String[] args) {
+//        LongestCommonPrefix lon = new LongestCommonPrefix();
+//        String str =lon.longestCommonPrefix(new String[]{"dog", "racecar", "car"});
+//        System.out.println(str);
+//        String str1 =lon.longestCommonPrefix(new String[]{"flower","flow","flight"});
+//        System.out.println(str1);
+//        String str2 =lon.longestCommonPrefix(new String[]{"ab","a"});
+//        System.out.println(str2);
+//    }
 
     }
 
