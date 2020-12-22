@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+//Dynamic programming - Bottom up
 public class CoinChange {
     public int coinChange(int[] coins, int amount){
         int max = amount + 1;
