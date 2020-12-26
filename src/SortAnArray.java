@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class SortAnArray {
 //    number 912
 //    https://leetcode.com/problems/sort-an-array/submissions/
-
-    public int[] sortAnArray(int[] nums){
+//using selection sort and bubble sort (bubble sort is not recommanded for the long array)
+    public int[] sortAnArray(int[] nums) {
 //        using selection sort faster than bubble sort
 //        for(int i =  0; i < nums.length; i++){
 //            int smallest = nums[i];
@@ -39,7 +39,6 @@ public class SortAnArray {
             }
         } while(swapped == true);
         return nums;
-
     }
     public static void main(String[] args) {
         int[] nums = {5,2,3,1};
