@@ -5,11 +5,14 @@ public class LinkedListCycle {
     public static boolean hasCycle(ListNode head){
         ListNode slow = head;
         ListNode fast = head;
+        int len = 0;
 //        if LinkedList is cycle, fast cannot be null, fast will pass slow at certain point
         while(fast != null && fast.next != null){
             fast = fast.next.next;
             slow = slow.next;
+            len++;
             if(slow == fast){
+                System.out.println("linkedList cycle length is: " + len);
                 return true;
             }
         }
