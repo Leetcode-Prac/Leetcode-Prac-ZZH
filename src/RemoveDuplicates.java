@@ -9,16 +9,25 @@ import java.util.ArrayList;
 //Output: 2
 //Explanation: The first two elements after removing the duplicates will be [2, 11].
 public class RemoveDuplicates {
-    public static int remove(int[] arr) {
-        int size = 1;
-        int start = 0;
-        for(int i = 1; i < arr.length ; i++){
-            if(arr[start]!= arr[i]){
-                start = i;
-                size++;
+    public static int remove(int[] nums) {
+//        int size = 1;
+//        int start = 0;
+//        for(int i = 1; i < arr.length ; i++){
+//            if(arr[start]!= arr[i]){
+//                start = i;
+//                size++;
+//            }
+//        }
+//        return size;
+        if (nums == null || nums.length == 0) return 0;
+        int i = 1, j = 0;
+        while (i < nums.length) {
+            if (nums[i] > nums[j]) {
+                nums[++j] = nums[i];
             }
+            i++;
         }
-        return size;
+        return j+1;
     }
 
     public static void main(String[] args) {
