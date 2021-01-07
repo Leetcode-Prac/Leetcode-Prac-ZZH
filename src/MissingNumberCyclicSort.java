@@ -26,7 +26,8 @@ public class MissingNumberCyclicSort {
         while(i < nums.length){
 //            nums[i]<nums.length, is used to exclude the last element in the array, to make it take the missing
 //            number's place!!
-            if(nums[i] != i && nums[i] < nums.length){
+//            must check the nums[i] < nums.length first
+            if( nums[i] < nums.length && nums[i] != nums[nums[i]]){
                 int j = nums[i];
                 swap(nums, i, j);
             } else {
