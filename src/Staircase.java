@@ -49,5 +49,6 @@ public class Staircase {
 
     public static void main(String[] args) {
         Staircase.staircase(4);
+        Staircase.staircase(6);
     }
 }
