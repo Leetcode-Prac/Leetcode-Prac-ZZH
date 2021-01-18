@@ -32,6 +32,7 @@ public class MissingNumber {
         } else {
             return 0;
         }
+
     }
     public static void main(String[] args) {
         MissingNumber mis = new MissingNumber();
