@@ -10,7 +10,6 @@
 //Explanation: '3' is duplicated and '5' is missing.
 public class FindDuplicateAndMissingNumbers {
     public static int[] findNumbers(int[] nums){
-
         int[] arr = new int[2];
         int i = 0;
         while(i < nums.length){
@@ -23,7 +22,7 @@ public class FindDuplicateAndMissingNumbers {
         }
         for(int k = 0; k < nums.length ; k++){
             if(nums[k] != k + 1){
-//        the duplicated number take the place of the missing number
+//        the duplicated number takes the place of the missing number
 //                get the duplicated number
                 arr[0] = nums[k];
 //                get the missing number
