@@ -15,6 +15,7 @@ class TreeNode{
 }
 public class LevelOrderTraversal {
    public static List<List<Integer>> traverse (TreeNode root){
+//       List<List<Integer>> result = new LinkedList<>();
        List<List<Integer>> result = new ArrayList<>();
        if(root == null){
            return result;
