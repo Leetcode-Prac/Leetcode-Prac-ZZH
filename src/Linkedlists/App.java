@@ -26,6 +26,14 @@ public class App {
 
         myList.displayList();
 
+        CircularLinkedList myList1 = new CircularLinkedList();
+        myList1.insertFirst(100);
+        myList1.insertFirst(50);
+        myList1.insertFirst(99);
+        myList1.insertFirst(88);
+        myList1.insertLast(8888);
+        myList1.displayList();
+
     }
     public static int listLength(Node nodeA){
         int length = 0;
